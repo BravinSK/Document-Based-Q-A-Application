@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# Uploaded files and cached data
+uploaded_docs/
+.cache/
+
+# Additional exclusions
+*.pyc
+.idea/
+.DS_Store
