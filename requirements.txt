@@ -1,17 +1,8 @@
-# streamlit==1.30.0
-# PyPDF2==3.0.1
-# python-dotenv==1.0.0
-# langchain==0.1.0
-# google-generativeai==0.3.1
-# langchain-google-genai==0.0.5
-# faiss-cpu==1.7.4
-# tiktoken==0.5.2
-
 streamlit==1.30.0
 PyPDF2==3.0.1
 python-dotenv==1.0.0
 langchain==0.1.0
 google-generativeai==0.3.1
 langchain-google-genai==0.0.5
-scikit-learn==1.5.0
+faiss-cpu==1.7.4
 tiktoken==0.5.2

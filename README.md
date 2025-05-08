@@ -28,15 +28,15 @@ doc-qa-app/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/doc-qa-app.git
-   cd doc-qa-app
+   git clone https://github.com/BravinSK/Document-Based-Q-A-Application.git
+   cd Document-Based-Q-A-Application
    ```
 
 2. Create a virtual environment:
 
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   venv\Scripts\activate  
    ```
 
 3. Install dependencies:
@@ -106,21 +106,3 @@ The application uses the following environment variables:
 - `GEMINI_API_KEY`: Your Google Gemini API key
 
 You can set these variables in a `.env` file in the root directory.
-
-## Extending the Application
-
-- Add support for more document formats (DOCX, HTML, etc.)
-- Implement document summarization
-- Add support for multiple documents
-- Implement document comparison
-- Add chat history functionality
-
-## License
-
-This project is open-source and available under the MIT License.
-
-## Acknowledgments
-
-- This project uses the LangChain framework for LLM applications.
-- The vector search functionality is provided by FAISS.
-- The language model capabilities are powered by Google's Gemini models.
