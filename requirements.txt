@@ -13,6 +13,5 @@ python-dotenv==1.0.0
 langchain==0.1.0
 google-generativeai==0.3.1
 langchain-google-genai==0.0.5
---find-links https://dl.fbaipublicfiles.com/faiss/wheel/faiss_cpu-1.7.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-faiss-cpu==1.7.4
+chromadb==0.4.18
 tiktoken==0.5.2
