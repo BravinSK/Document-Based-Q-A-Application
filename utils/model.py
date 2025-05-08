@@ -168,8 +168,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGener
 from langchain_community.llms import GooglePalm
 from langchain.chains import RetrievalQA
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-# Replace FAISS import with Chroma
-from langchain_community.vectorstores import Chroma
+# Replace with sklearn vector store
+from langchain_community.vectorstores import SKLearnVectorStore
 from langchain_core.output_parsers import StrOutputParser
 
 # Set up logging
@@ -236,8 +236,8 @@ class QAModel:
             texts = text_splitter.split_text(document_text)
             logger.info(f"Split document into {len(texts)} chunks")
             
-            # Create vector store using Chroma instead of FAISS
-            vectorstore = Chroma.from_texts(
+            # Create vector store using SKLearn instead of FAISS or Chroma
+            vectorstore = SKLearnVectorStore.from_texts(
                 texts, 
                 self.embeddings
             )
@@ -245,7 +245,6 @@ class QAModel:
             
             # Create retriever
             retriever = vectorstore.as_retriever(
-                search_type="similarity",
                 search_kwargs={"k": 4}  # Number of documents to retrieve
             )
             
